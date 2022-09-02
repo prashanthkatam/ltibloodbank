@@ -157,7 +157,7 @@ table, th, td {
             <div class="find-donor-max-width max-content-container">
               <div class="find-donor-content-container">
                 <span class="find-donor-text">LTI Blood Bank</span>
-                <a href="find-donor.php" class="find-donor-navlink">
+                <a href="find-donor.html" class="find-donor-navlink">
                   <div class="find-donor-card">
                     <h4 class="find-donor-text01 heading4">Find Donor</h4>
                     <svg viewBox="0 0 1024 1024" class="find-donor-icon">
@@ -185,6 +185,10 @@ table, th, td {
               </div>
             </div>
           </div>
+            
+    <form>                
+<button type="submit" formaction="/search.php" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">Advanced Search</button><br><br>
+</form> 
           <form method="post">
 <button type="submit" formaction="/index.html" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">Redirect to home page</button><br><br>
 </form>
@@ -477,4 +481,5 @@ $script->getdata();
     </script>
   </body>
 </html>
+
 
