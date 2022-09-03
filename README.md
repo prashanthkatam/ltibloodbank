@@ -22,7 +22,7 @@ Example: Donate-blood.php, Find-donor.php, config.php, signup.php, index.php {lo
 
 # Connecting to My SQL Database
 
-mysql -h mysqldb2022.cecfz17qugxf.us-west-2.rds.amazonaws.com -u admin -p
+mysql -h mysqldb2022.cywy0av2gf7h.us-west-2.rds.amazonaws.com -u admin -p
 
 # Create Database
 Create database customers;
@@ -52,6 +52,24 @@ INSERT INTO `users` (`username`, `name`, `password`) VALUES
 ('prashanth', 'Prashanth Katkam', '12345'),
 ('vijay', 'Vijay mourya', '12345');
 
+
+INSERT INTO `donors` (`fname`, `lname`, `mobileno`, `city`, `date`, `dob`, `bloodgroup`) VALUES
+('Srikanth', 'Koraveni', '9000736060', 'Pune', '2022-09-28', '1998-05-22', 'O_Positive'),
+('Prashanth', 'Katkam', '7989919097', 'Mumbai', '2022-09-28', '1998-09-30', 'O_Positive'),
+('Kranthi', 'Khaitha', '9876789871', 'Bangalore', '2022-09-16', '1996-07-02', 'B_Positive'),
+('Srinivas', 'Thota', '9812789411', 'Mumbai', '2022-09-12', '1992-07-22', 'B_Positive'),    
+('Zaheer', 'Khan', '7788678987', 'Chennai', '2022-09-11', '1998-11-11', 'A_Positive');
+
+
+#DB Endpoint needs to be added
+
+vi donate-blood.php
+vi find-donor.php
+vi config.php
+vi search.php
+vi signup.php
+
+
 # Insert Single Values to a Table
 
 INSERT INTO `users` (`username`, `name`, `password`) VALUES
@@ -59,17 +77,26 @@ INSERT INTO `users` (`username`, `name`, `password`) VALUES
 
 # Git Commands
 
+git clone URL
+
+git clone --branch branchname URL
+
 sudo git init
 
 sudo git remote add origin "https://github.com/prashanthkatam/ltibloodbank.git"
+
+sudo git remote add origin "https://github.com/prashanthkatam/test.git"
 
 sudo git remote -v
 
 sudo git add .
 
-sudo git commit -m "My Session Commit - This is the final code for the website with signup and login session functionality"
+sudo git commit -m ""
 
-git remote set-url origin https://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@github.com/prashanthkatam/ltibloodbank.git
+git remote set-url origin https://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@github.com/prashanthkatam/ltibloodbank.git
+
+git remote set-url origin https://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@github.com/prashanthkatam/test.git
+
 
 sudo git push origin master
 
